@@ -28,8 +28,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px;
     position: fixed;
+    padding: 10px;
     top: 0;
     left: 0;
     width: 100%;
@@ -135,23 +135,23 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 50%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    padding: 20px;
     z-index: 4;
     user-select: none;
     gap: 16px;
-    border: 2px solid white;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .image {
-    height: 70%;
+    height: 100%;
     width: 100%;
     border-radius: 5px;
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .name {
     font-size: 30px;
@@ -161,10 +161,13 @@ section {
     text-align: center;
 }
 button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
     border: 0;
     background-color: transparent;
     padding: 8px;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 24px;
     border-radius: 5px; 
@@ -172,7 +175,7 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    color: red;
 }
 @media only screen and (max-width: 1048px) {
     button {
@@ -187,7 +190,6 @@ button:hover {
         }
     }
     .modal {
-        padding: 8px;
         display: flex;
     }
     .image {
@@ -233,7 +235,6 @@ button:hover {
     }
     .modal {
         width: 80%;
-        padding: 8px;
         display: flex;
     }
     .image {
